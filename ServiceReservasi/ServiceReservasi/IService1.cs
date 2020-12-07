@@ -15,7 +15,7 @@ namespace ServiceReservasi
         //method proses input data
         string pemesanan(string IdPemesanan, string NamaCustomer, string NoTelp, int JumlahPemesanan, string IdLokasi);
         [OperationContract]
-        string editPemesanan(string idPemesanan, string namaCustomer);
+        string editPemesanan(string IdPemesanan, string NamaCustomer, string NoTelp);
         [OperationContract]
         string deletePemesanan(string idPemesanan);
         [OperationContract]
@@ -66,6 +66,6 @@ namespace ServiceReservasi
         [DataMember]
         public int JumlahPemesanan { get; set; }
         [DataMember]
-        public string IdLokasi { get; set; }
+        public string Lokasi { get; set; }
     }
 }
